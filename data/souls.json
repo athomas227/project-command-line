@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "soul": "Soul of Yhorm the Giant",
+    "priceInSouls": "744326",
+    "soulsGainedIfConsumed": "15991",
+    "id": "Dd",
+    "inStock": "4"
+  },
+  {
+    "soul": "Soul of Aldrich",
+    "priceInSouls": "262101",
+    "soulsGainedIfConsumed": "14817",
+    "id": "TW",
+    "inStock": "7"
+  },
+  {
+    "soul": "Soul of the Dancer",
+    "priceInSouls": "625662",
+    "soulsGainedIfConsumed": "9459",
+    "id": "wI",
+    "inStock": "2"
+  }
+]
