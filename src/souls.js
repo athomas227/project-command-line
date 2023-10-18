@@ -37,10 +37,12 @@ function generateSouls() {
     ]
   }
 
+// Function to generate a random number within a range.
 function getRandomNum(min, max) {
     return (Math.random() * (max - min) + min).toFixed(0);
 }
 
+// Function to add a new soul to the list of souls.
 function addSoul() {
     const newSoul = {
         soul: generateSouls(),
@@ -54,14 +56,17 @@ function addSoul() {
     return newSoul;
 }
 
+// Function to get all available souls.
 function getAllSouls() {
     return souls;
 }
 
+// Function to get soul details by ID.
 function getSoulByID(id) {
     return souls.find(soul => soul.id === id) || null;
 }
 
+// Function to update the details of a soul by ID.
 function updateSoul(id, updatedSoul) {
     const existingSoul = getSoulByID(id);
     if (existingSoul) {
@@ -76,6 +81,7 @@ function updateSoul(id, updatedSoul) {
     return null;
 }
 
+// Function to remove a soul by ID.
 function removeSoul(id) {
     const index = souls.findIndex(soul => soul.id === id);
     if (index !== -1) {
@@ -84,7 +90,7 @@ function removeSoul(id) {
     }
 }
   
-
+// Function to add a soul to the shopping cart.
 function addToCart(soulId, quantity) {
     const soul = getSoulByID(soulId);
     if (soul) {
@@ -103,10 +109,12 @@ function addToCart(soulId, quantity) {
     }
 }
 
+// Function to view the contents of the shopping cart.
 function viewCart() {
     return shoppingCart;
 }
 
+// Function to calculate the total price of items in the shopping cart.
 function calculateCartTotal() {
     let total = 0;
 
@@ -117,6 +125,7 @@ function calculateCartTotal() {
     return total;
 }
 
+// Function to calculate the total price of a specific item in the cart.
 function calculateCartItemTotal(soulId) {
     const cartItem = shoppingCart.find(item => item.id === soulId);
 
@@ -126,6 +135,7 @@ function calculateCartItemTotal(soulId) {
     return 0;
 }
 
+// Function to cancel the shopping cart.
 function cancelCart() {
     shoppingCart.splice(0, shoppingCart.length);
     fs.writeFileSync("./data/shoppingCart.json", JSON.stringify(shoppingCart, null, 2));
