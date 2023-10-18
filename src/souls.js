@@ -62,7 +62,7 @@ function getSoulByID(id) {
     return souls.find(soul => soul.id === id) || null;
 }
 
-function updateSoul(id, newSoul) {
+function updateSoul(id, updatedSoul) {
     const existingSoul = getSoulByID(id);
     if (existingSoul) {
         const index = souls.findIndex(soul => soul.id === id);

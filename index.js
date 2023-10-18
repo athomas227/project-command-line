@@ -54,7 +54,7 @@ switch (command) {
 
     case 'update':
         const soulIdToUpdate = process.argv[3];
-        const updatedSoul = JSON.parse(process.argv[4] || '{}');
+        const updatedSoul = JSON.parse(process.argv[4]);
         if (!soulIdToUpdate) {
             console.log(red('Please provide a soul ID to update.'));
         } else {
