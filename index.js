@@ -63,7 +63,13 @@ switch (command) {
     // 'update' command: Update the details of a specific soul.    
     case 'update':
         const soulIdToUpdate = process.argv[3];
-        const updatedSoul = JSON.parse(process.argv[4]);
+        const updatedSoul = {
+            soul: process.argv[4],
+            priceInSouls: process.argv[5],
+            soulsGainedIfConsumed: process.argv[6],
+            id: process.argv[7],
+            inStock: process.argv[8],
+        }
         if (!soulIdToUpdate) {
             console.log(red('Please provide a soul ID to update.'));
         } else {

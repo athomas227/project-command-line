@@ -17,7 +17,7 @@ const {
   });
 
   test('getSoulByID should return the soul with the specified ID', () => {
-    const id = "d-";
+    const id = "Dd";
     const soul = getSoulByID(id);
     expect(soul.id).toBe(id);
   });
