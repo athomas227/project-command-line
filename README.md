@@ -68,9 +68,15 @@ Soul deleted.
 ```
 - `node index.js update "id" "newInfo"` (updates the info of a soul with matching "id", with "newInfo")
 ```
-node index.js update 
+node index.js update "qI" "Soul of Drew" "999999" "999999" "qI" "99"
 
-Please provide a soul ID to update.
+Soul updated: {
+  soul: 'Soul of Drew',
+  priceInSouls: '999999',
+  soulsGainedIfConsumed: '999999',
+  id: 'qI',
+  inStock: '99'
+}
 ```
 - `node index.js addToCart "id" "quantity"` (adds "quantity" soul(s), with matching "id" to cart for purchase)
 ```

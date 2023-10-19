@@ -19,5 +19,12 @@
     "soulsGainedIfConsumed": "9459",
     "id": "wI",
     "inStock": "2"
+  },
+  {
+    "soul": "Soul of Drew",
+    "priceInSouls": "999999",
+    "soulsGainedIfConsumed": "999999",
+    "id": "qI",
+    "inStock": "99"
   }
 ]
