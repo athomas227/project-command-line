@@ -66,7 +66,7 @@ node index.js delete Hj
 
 Soul deleted.
 ```
-- `node index.js update "id" "newInfo"` (updates the info of a soul with matching "id", with "newInfo")
+- `node index.js update "id" "new-soul" "new-priceInSouls" "new-soulsGainedIfConsumed" "new-id" "new-inStock-value"` (updates the info of a soul with matching "id", using the keys as parameters)
 ```
 node index.js update "qI" "Soul of Drew" "999999" "999999" "qI" "99"
 
